@@ -39,3 +39,10 @@ if (exploreButton) {
         this.style.transform = 'scale(1)';
     });
 }
+// Toggle sidebar visibility
+const menuToggle = document.querySelector('.menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+
+menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+});
